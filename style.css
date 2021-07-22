@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main_block {
+    display: flex;
+    margin: 20%;
+    justify-content: center;
+    align-content: center;
+    height: 450px;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 400;
+}
+
+.sedan_div {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;    
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 33%;   
+}
+
+.suv_div {
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 33%;       
+}
+
+.luxury_div {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 33%;           
+}
+
+.icon {
+    width: 60px;
+}
+
+.para {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.button {
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 100px;
+    font-family: 'Lexend Deca';
+    border-color: white;
+}
