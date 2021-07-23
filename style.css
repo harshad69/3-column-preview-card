@@ -18,8 +18,7 @@ body {
 }
 
 .sedan_div {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;    
+    border-radius: 10px 0 0 10px;
     background-color: hsl(31, 77%, 52%);
     display: flex;
     flex-direction: column;
@@ -36,8 +35,7 @@ body {
 }
 
 .luxury_div {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border: 0 10px 10px 0;
     background-color: hsl(179, 100%, 13%);
     display: flex;
     flex-direction: column;
@@ -51,16 +49,61 @@ body {
 
 .para {
     font-family: 'Lexend Deca';
-    font-weight: 400;
+    font-weight: 100;
     font-size: 12px;
 }
 
 .button {
-    color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
     margin-top: 40px;
     width: 100px;
     font-family: 'Lexend Deca';
     border-color: white;
+    border-style: solid;
+    text-decoration: none;
+    align-items: flex-end;
+}
+
+.sedan_div > button {
+    color: hsl(31, 77%, 52%);
+}
+.sedan_div > button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.suv_div > button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv_div > button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.luxury_div > button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury_div > button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .main_block {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 120%;
+    }
+
+    .sedan_div {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury_div {
+        border-radius: 0 0 10px 10px;
+    }
 }
